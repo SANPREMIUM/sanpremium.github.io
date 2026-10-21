@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>SANN Toolbox</title>
-<meta name="description" content="SANN Toolbox adalah aplikasi all in one dengan 150+ tools: kalkulator, game, pelacak produktivitas, perencana belanja, dan lainnya. Yang dibuat oleh Sandy Hendrawan.">
+<meta name="description" content="SANN Toolbox adalah aplikasi all in one yang dibuat oleh Sandy Hendrawan atau yang lebih dikenal Sandrian. 150+ tools gratis: kalkulator, game, dan produktivitas.">
 <link rel="canonical" href="https://sanpremium.github.io/">
 <link rel="icon" type="image/png" sizes="192x192" href="/SannToolbox/icon-192.png">
 <link rel="apple-touch-icon" href="/SannToolbox/icon-192.png">
@@ -13,28 +13,48 @@
 <meta property="og:title" content="SANN Toolbox">
 <meta property="og:url" content="https://sanpremium.github.io/">
 <meta property="og:image" content="https://sanpremium.github.io/SannToolbox/icon-192.png">
-<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SANN Toolbox","alternateName":["SannToolbox","Sann Toolbox"],"url":"https://sanpremium.github.io/","description":"SANN Toolbox adalah aplikasi all in one dengan 150+ tools: kalkulator, game, pelacak produktivitas, perencana belanja, dan lainnya. Yang dibuat oleh Sandy Hendrawan.","author":{"@type":"Person","name":"Sandy Hendrawan","alternateName":"Sandrian"}}</script>
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"SANN Toolbox","alternateName":["SannToolbox","Sann Toolbox"],"url":"https://sanpremium.github.io/","description":"SANN Toolbox adalah aplikasi all in one yang dibuat oleh Sandy Hendrawan atau yang lebih dikenal Sandrian. 150+ tools gratis: kalkulator, game, dan produktivitas.","author":{"@type":"Person","name":"Sandy Hendrawan","alternateName":"Sandrian"}}</script>
 <style>
-:root{--bg:#f4f6ff;--card:#fff;--text:#161a2b;--muted:#5b6280;--accent:#4f6bff}
+:root{--bg:#f4f6ff;--card:#fff;--text:#161a2b;--muted:#5b6280;--accent:#4f6bff;--line:rgba(127,127,127,.25)}
 @media (prefers-color-scheme:dark){:root{--bg:#0b0d16;--card:#151827;--text:#eef0ff;--muted:#9aa1c4;--accent:#7b8cff}}
 *{box-sizing:border-box}
 body{margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:460px;width:100%;background:var(--card);border-radius:24px;padding:32px 24px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.12)}
-img{width:88px;height:88px;border-radius:22px}
-h1{margin:16px 0 8px;font-size:28px}
-p{color:var(--muted);line-height:1.6;margin:0 0 16px;text-align:left}
-ul{list-style:none;padding:0;margin:0 0 24px;display:flex;flex-wrap:wrap;gap:8px;justify-content:center}
-li{background:rgba(127,127,127,.14);border-radius:999px;padding:6px 12px;font-size:13px}
-a.btn{display:inline-block;background:var(--accent);color:#fff;text-decoration:none;font-weight:700;padding:14px 28px;border-radius:999px}
+main{max-width:420px;width:100%;background:var(--card);border-radius:24px;padding:32px 22px 24px;text-align:center;box-shadow:0 10px 40px rgba(0,0,0,.12)}
+img{width:92px;height:92px;border-radius:24px}
+h1{margin:16px 0 6px;font-size:28px}
+.tag{color:var(--muted);margin:0 0 24px;line-height:1.5}
+.menu{display:flex;flex-direction:column;gap:12px}
+.opt{display:flex;align-items:center;gap:14px;text-align:left;text-decoration:none;color:var(--text);border:1.5px solid var(--line);border-radius:16px;padding:14px 16px;font-weight:700;font-size:16px}
+.opt small{display:block;font-weight:400;font-size:12.5px;color:var(--muted);margin-top:2px}
+.opt .ic{font-size:26px;width:36px;text-align:center}
+.opt.primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.opt.primary small{color:rgba(255,255,255,.85)}
+.opt.off{opacity:.5;pointer-events:none}
+.foot{margin:22px 0 0;font-size:12.5px;color:var(--muted)}
 </style>
 </head>
 <body>
 <main>
   <img src="/SannToolbox/icon-192.png" alt="Ikon SANN Toolbox">
   <h1>SANN Toolbox</h1>
-  <p>SANN Toolbox adalah aplikasi atau website all in one yang memudahkan keseharianmu. Ada 150 lebih tools seperti kalkulator, game, pelacak produktivitas, perencana belanja, dan lain-lain. Aplikasi ini dibuat oleh Sandy Hendrawan, yang lebih dikenal dengan nama Sandrian, dan berhasil ia bangun di usia 19 tahun dengan konsep &quot;tools yang berguna untuk sebagian orang&quot;. Aplikasi ini akan terus berkembang dan fiturnya akan terus bertambah seiring berjalannya waktu.</p>
-  <ul><li>Kalkulator</li><li>Game</li><li>Produktivitas</li><li>Perencana Belanja</li><li>Belajar</li></ul>
-  <a class="btn" href="/SannToolbox/">Buka SANN Toolbox</a>
+  <p class="tag">150+ tools gratis dalam satu aplikasi.</p>
+  <nav class="menu">
+    <a class="opt primary" id="optWeb" href="/SannToolbox/"><span class="ic">🌐</span><span>Masuk ke Web<small>Langsung pakai di browser</small></span></a>
+    <a class="opt" id="optApk" href="#"><span class="ic">📱</span><span>Unduh Aplikasi<small>Versi Android (APK)</small></span></a>
+    <a class="opt" id="optKontak" href="#"><span class="ic">💬</span><span>Hubungi Pembuat<small>Kritik, saran, atau pertanyaan</small></span></a>
+  </nav>
+  <p class="foot">Dibuat oleh Sandy Hendrawan (Sandrian)</p>
 </main>
+<script>
+/* Isi link di bawah. Kosongkan ('') kalau belum ada: tombolnya otomatis diredupkan. */
+var LINKS={
+  apk:'https://www.mediafire.com/file/u54psjjfzmgjnyo/SANN_Toolbox.apk/file',
+  kontak:'https://wa.me/6281398803306?text=Permisi%2C%20saya%20ingin%20bertanya%20tentang%20SANN%20Toolbox.'
+};
+[['optApk','apk'],['optKontak','kontak']].forEach(function(x){
+  var el=document.getElementById(x[0]), u=LINKS[x[1]];
+  if(u){ el.href=u; el.target='_blank'; el.rel='noopener'; } else { el.classList.add('off'); el.removeAttribute('href'); }
+});
+</script>
 </body>
 </html>
